@@ -1,0 +1,65 @@
+site_name: "Aurae Runtime"
+site_url: "https://aurae.io"
+repo_url: "https://github.com/aurae-runtime/aurae"
+edit_uri: "edit/main/"
+
+nav:
+  - Home: index.md
+  - Auraed: /auraed
+  - AuraeScript: /auraescript
+  - Aurae Standard Library:
+    - Specification: /stdlib
+    - V0: /stdlib/v0
+  - Building from Source: /build
+  - Quick Start: /quickstart
+  - Certificates: /certs
+  - Contributors: /contributors
+  - Reference:
+    - auraed: /crate/auraed
+    - auraescript: /crate/auraescript
+    - implementors: /crate/implementors
+    - macros: /crate/macros
+    - src:
+      - auraed: /crate/src/auraed/lib.rs.html
+      - auraescript: /crate/src/auraescript/lib.rs.html
+      - macros: /crate/src/macros/lib.rs.html
+  - Blog:
+      - Isolation with Aurae Cells: /blog/24-10-2022-aurae-cells
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo-540x540.png
+  favicon: assets/logo-540x540.png
+  font:
+    text: Gotham
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: yellow
+
+extra_css:
+  - assets/aurae.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: Copyright &copy; 2022 The Aurae Runtime Project
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<info@aurae.io>
